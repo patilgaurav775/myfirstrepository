@@ -26,6 +26,8 @@ public static WebDriver driver;
 		 action.clickAndHold(pointer).moveToElement(pointer, -25, 0).release().build().perform();
 		 Thread.sleep(3000);
 		 
+		 System.out.println("prashant");
+		 
 	}
 
 }
