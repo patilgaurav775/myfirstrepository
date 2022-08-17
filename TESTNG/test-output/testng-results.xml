@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-25T13:11:28 IST" name="Default suite" finished-at="2022-07-25T13:11:28 IST" duration-ms="100">
+    <groups>
+    </groups>
+    <test started-at="2022-07-25T13:11:28 IST" name="Default test" finished-at="2022-07-25T13:11:28 IST" duration-ms="100">
+      <class name="PRACTICE.DATA_PROVIDER">
+        <test-method signature="login_test(java.lang.String,int,java.lang.String)[pri:0, instance:PRACTICE.DATA_PROVIDER@1bb266b3]" started-at="2022-07-25T13:11:28 IST" name="login_test" data-provider="login data provider" finished-at="2022-07-25T13:11:28 IST" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_test -->
+        <test-method signature="login_test(java.lang.String,int,java.lang.String)[pri:0, instance:PRACTICE.DATA_PROVIDER@1bb266b3]" started-at="2022-07-25T13:11:28 IST" name="login_test" data-provider="login data provider" finished-at="2022-07-25T13:11:28 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[def@123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_test -->
+        <test-method signature="login_test(java.lang.String,int,java.lang.String)[pri:0, instance:PRACTICE.DATA_PROVIDER@1bb266b3]" started-at="2022-07-25T13:11:28 IST" name="login_test" data-provider="login data provider" finished-at="2022-07-25T13:11:28 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ghi@123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[789]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_test -->
+      </class> <!-- PRACTICE.DATA_PROVIDER -->
+      <class name="PRACTICE.two">
+        <test-method signature="login_test(java.lang.String,int)[pri:0, instance:PRACTICE.two@1f97cf0d]" started-at="2022-07-25T13:11:28 IST" name="login_test" data-provider="login data provider" finished-at="2022-07-25T13:11:28 IST" duration-ms="2" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void PRACTICE.two.login_test(java.lang.String,int)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: login_test([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=int, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) abc@123,(java.lang.Integer) 123,(java.lang.String) user1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void PRACTICE.two.login_test(java.lang.String,int)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: login_test([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=int, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) abc@123,(java.lang.Integer) 123,(java.lang.String) user1]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_test -->
+      </class> <!-- PRACTICE.two -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

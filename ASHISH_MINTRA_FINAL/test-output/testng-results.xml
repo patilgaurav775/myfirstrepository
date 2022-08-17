@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-30T19:38:12 IST" name="Default suite" finished-at="2022-06-30T19:38:13 IST" duration-ms="883">
+    <groups>
+    </groups>
+    <test started-at="2022-06-30T19:38:12 IST" name="Default test" finished-at="2022-06-30T19:38:13 IST" duration-ms="883">
+      <class name="dashboard.hello">
+        <test-method is-config="true" signature="launch()[pri:0, instance:dashboard.hello@69e1dd28]" started-at="2022-06-30T19:37:55 IST" name="launch" finished-at="2022-06-30T19:38:12 IST" duration-ms="17343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="validate_main_module()[pri:0, instance:dashboard.hello@69e1dd28]" started-at="2022-06-30T19:38:12 IST" name="validate_main_module" finished-at="2022-06-30T19:38:13 IST" duration-ms="828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_main_module -->
+      </class> <!-- dashboard.hello -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

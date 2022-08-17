@@ -1,0 +1,82 @@
+Request method:	POST
+Request URI:	http://localhost:8081/rest/api/2/issue/10004/comment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=10004
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "body": "THIS COMMENT IS GIVEN THROUGH ECLIPS BY GAURAV",
+    "visibility": {
+        "type": "role",
+        "value": "Administrators"
+    }
+}
+HTTP/1.1 201 
+X-AREQUESTID: 741x774x2
+X-ASESSIONID: mukupn
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BCF9-C7XZ-F5TE-2MN4_b87297489fc08afe79f70d8f66fcf4efb759b6e5_lin; Path=/
+X-AUSERNAME: patil775gaurav
+Location: http://localhost:8081/rest/api/2/issue/10004/comment/10002
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 15 Jul 2022 06:51:41 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "self": "http://localhost:8081/rest/api/2/issue/10004/comment/10002",
+    "id": "10002",
+    "author": {
+        "self": "http://localhost:8081/rest/api/2/user?username=patil775gaurav",
+        "name": "patil775gaurav",
+        "key": "JIRAUSER10000",
+        "emailAddress": "patil775gaurav@gmail.com",
+        "avatarUrls": {
+            "48x48": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=48",
+            "24x24": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=24",
+            "16x16": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=16",
+            "32x32": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=32"
+        },
+        "displayName": "patil775gaurav@gmail.com",
+        "active": true,
+        "timeZone": "Asia/Calcutta"
+    },
+    "body": "THIS COMMENT IS GIVEN THROUGH ECLIPS BY GAURAV",
+    "updateAuthor": {
+        "self": "http://localhost:8081/rest/api/2/user?username=patil775gaurav",
+        "name": "patil775gaurav",
+        "key": "JIRAUSER10000",
+        "emailAddress": "patil775gaurav@gmail.com",
+        "avatarUrls": {
+            "48x48": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=48",
+            "24x24": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=24",
+            "16x16": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=16",
+            "32x32": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=32"
+        },
+        "displayName": "patil775gaurav@gmail.com",
+        "active": true,
+        "timeZone": "Asia/Calcutta"
+    },
+    "created": "2022-07-15T12:21:40.402+0530",
+    "updated": "2022-07-15T12:21:40.402+0530",
+    "visibility": {
+        "type": "role",
+        "value": "Administrators"
+    }
+}

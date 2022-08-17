@@ -1,0 +1,131 @@
+Request method:	POST
+Request URI:	http://localhost:8081/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "patil775gaurav",
+    "password": "Gaurav@123"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 885x1491x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BCF9-C7XZ-F5TE-2MN4_96e3bcd542402221cf80abaaaf299b9f0d39131f_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=F98201BF9522E2327DA8325A15F49A59; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 15 Jul 2022 09:15:01 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "F98201BF9522E2327DA8325A15F49A59"
+    },
+    "loginInfo": {
+        "failedLoginCount": 3,
+        "loginCount": 51,
+        "lastFailedLoginTime": "2022-07-15T13:04:59.647+0530",
+        "previousLoginTime": "2022-07-15T14:44:08.597+0530"
+    }
+}
+Request method:	POST
+Request URI:	http://localhost:8081/rest/api/2/issue/10004/comment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=10004
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "body": "HELLO LUCIFER",
+    "visibility": {
+        "type": "role",
+        "value": "Administrators"
+    }
+}
+HTTP/1.1 201 
+X-AREQUESTID: 885x1492x1
+X-ASESSIONID: 1xmk2mz
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BCF9-C7XZ-F5TE-2MN4_8ff6e5c00795c8794038f9dde9367aede945c035_lin; Path=/
+X-AUSERNAME: patil775gaurav
+Location: http://localhost:8081/rest/api/2/issue/10004/comment/10020
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 15 Jul 2022 09:15:01 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "self": "http://localhost:8081/rest/api/2/issue/10004/comment/10020",
+    "id": "10020",
+    "author": {
+        "self": "http://localhost:8081/rest/api/2/user?username=patil775gaurav",
+        "name": "patil775gaurav",
+        "key": "JIRAUSER10000",
+        "emailAddress": "patil775gaurav@gmail.com",
+        "avatarUrls": {
+            "48x48": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=48",
+            "24x24": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=24",
+            "16x16": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=16",
+            "32x32": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=32"
+        },
+        "displayName": "patil775gaurav@gmail.com",
+        "active": true,
+        "timeZone": "Asia/Calcutta"
+    },
+    "body": "HELLO LUCIFER",
+    "updateAuthor": {
+        "self": "http://localhost:8081/rest/api/2/user?username=patil775gaurav",
+        "name": "patil775gaurav",
+        "key": "JIRAUSER10000",
+        "emailAddress": "patil775gaurav@gmail.com",
+        "avatarUrls": {
+            "48x48": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=48",
+            "24x24": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=24",
+            "16x16": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=16",
+            "32x32": "https://www.gravatar.com/avatar/4b2f9d99fa1c9dce85dca79bbdd60e4a?d=mm&s=32"
+        },
+        "displayName": "patil775gaurav@gmail.com",
+        "active": true,
+        "timeZone": "Asia/Calcutta"
+    },
+    "created": "2022-07-15T14:45:02.239+0530",
+    "updated": "2022-07-15T14:45:02.239+0530",
+    "visibility": {
+        "type": "role",
+        "value": "Administrators"
+    }
+}

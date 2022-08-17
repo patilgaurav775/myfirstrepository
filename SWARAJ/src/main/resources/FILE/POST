@@ -1,0 +1,62 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123&key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=[qaclick123, qaclick123]
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+
+  "location": {
+
+    "lat": -38.383494,
+
+    "lng": 33.427362
+
+  },
+
+  "accuracy": 50,
+
+  "name": "Gaurav house",
+
+  "phone_number": "(+91) 932 284 7574",
+
+  "address": "953, vivekanand nagar pachora, cohen 09",
+
+  "types": [
+
+    "shoe park",
+
+    "shop"
+
+  ],
+
+  "website": "http://google.com",
+
+  "language": "English-IN"
+
+}
+HTTP/1.1 200 OK
+Date: Sat, 23 Jul 2022 09:42:23 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "1eaefea5a5fd959f0ae091bf14c7f1b5",
+    "scope": "APP",
+    "reference": "26702e78afeab429c39f693de753714426702e78afeab429c39f693de7537144",
+    "id": "26702e78afeab429c39f693de7537144"
+}

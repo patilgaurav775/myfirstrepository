@@ -1,0 +1,139 @@
+package com.restapi_testng;
+import static io.restassured.RestAssured.given;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintStream;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import com.Util.Excle_file;
+import com.Util.Jsonpath;
+import com.Util.Object_Mapper;
+import com.Util.Propertiesfile;
+import com.Util.Spark_reportor;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.pojo.POJO;
+import com.pojo.PassData_pojo;
+import com.pojo.Place_id;
+import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.path.json.JsonPath;
+
+@Listeners(com.restapi_testng.Listners.class)
+public class test extends Pre_conditions { 
+
+	
+	public static String placeid;
+	public static String respo_postresp;
+	public static String respo_getresp;
+	public static String respo_deleteresp;
+	
+
+
+	@DataProvider (name = "excle")
+	public Object[][] Authentication(){ 
+		Excle_file abc=new Excle_file(prop.getProperty("Exclepath"),prop.getProperty("Post_Sheet"));
+		Object[][] data=null;
+		try {
+			data = abc.readexcle(1,"Post");
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+
+
+		return data; 
+	}
+
+	@Test (priority = 1, testName="CREAT NEW DATA ON RESOURCES", dataProvider = "excle")
+	public void posttest(String testname,String path,double lat,double lng, double acc,String name, String phone,String address, String typ1, String typ2, String web, String lang) throws IOException {
+
+
+		PrintStream addfile=Propertiesfile.responcefile("Result/POST");
+		
+		POJO pojo =PassData_pojo.addvalue(lat,lng,acc,name, phone,address,typ1,typ2,web,lang);		
+		String payload= Object_Mapper.mapper(pojo);
+
+		respo_postresp = given().spec(Pre_conditions.req).
+				body(payload)                 //new String (Files.readAllBytes(Paths.get(Pre_conditions.prop.getProperty("jsonpath"))))
+				.filter(ResponseLoggingFilter.logResponseTo(addfile))				
+				.when().post(path).
+				then().log().all().spec(Pre_conditions.res).extract().response().asString();
+
+		JsonPath js1 = Jsonpath.parsjson(respo_postresp);
+		placeid = js1.getString("place_id");
+
+		Spark_reportor.info(testname,payload);
+		
+		
+		
+	//	Spark_reportor.info(postresp);
+		
+       
+		//System.out.println(payload);
+		
+		//Excle_file.creatdata(2, "C:\\Users\\Vrushabh Manatkar\\Desktop\\Api_testing.xlsx", placeid);
+	}
+
+	@Test(priority = 2,testName="GET DATA FROM RESOURCES")
+	public void gettest() throws FileNotFoundException {
+		PrintStream addfile=Propertiesfile.responcefile("Result/GET");
+
+		 respo_getresp = given().spec(Pre_conditions.req)
+				.queryParam("place_id", placeid).filter(ResponseLoggingFilter.logResponseTo(addfile)).
+				when().get(Pre_conditions.prop.getProperty("Resources1")).
+				then().log().all().spec(Pre_conditions.res).extract().response().asString();
+
+		        Spark_reportor.info("get",respo_postresp);
+
+	}
+
+	@Test(priority = 3,testName="UPDATE DATA ON RESOURCES", enabled = true)
+	public void puttest() throws FileNotFoundException, JsonProcessingException {
+		PrintStream addfile=Propertiesfile.responcefile("Result/PUT");
+
+		Place_id id=new Place_id();
+		id.setPlace_id(placeid);
+		id.setAddress("10,jsonroad, UK");
+		id.setKey("qaclick123");
+		String putload=Object_Mapper.mapper(id);
+
+
+		String putrespo = given().spec(Pre_conditions.req)
+				.queryParam("place_id", placeid).body(putload).
+				filter(ResponseLoggingFilter.logResponseTo(addfile)).
+				when().put(Pre_conditions.prop.getProperty("Resources2"))
+				.then().log().all().spec(Pre_conditions.res).extract().response().asString();
+
+		JsonPath js2 = Jsonpath.parsjson(putrespo);
+
+		Spark_reportor.info("put",putload);
+
+
+	}
+
+	@Test(priority = 4,testName="DELETE DATA FROM RESOURCES")
+	public void deletetest() throws FileNotFoundException, JsonProcessingException {
+		PrintStream addfile=Propertiesfile.responcefile("Result/DELETE");
+
+		Place_id id=new Place_id();
+		id.setPlace_id(placeid);
+
+		String deletepayload =Object_Mapper.mapper(id);
+
+		respo_deleteresp =	given().spec(Pre_conditions.req).
+				body(deletepayload).filter(ResponseLoggingFilter.logResponseTo(addfile)).		
+				when().delete(Pre_conditions.prop.getProperty("Resources3")).
+				then().log().all().spec(Pre_conditions.res).extract().response().asString();	
+
+		
+		         Spark_reportor.info("Delete",deletepayload);
+
+
+	}
+
+
+
+	//sapret method for given (log all data ) for report 
+	//using pojo class  //data provider excle integration 
+
+}

@@ -1,0 +1,4 @@
+# Created at 2022-07-08T11:23:46.885
+Boot Manifest-JAR contains absolute paths in classpath 'F:\GAURAV\eclips2\DCSC\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

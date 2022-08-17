@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Date: Tue, 26 Jul 2022 09:50:19 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "c5e07820d2b66eb38c4a201ea5a5f056",
+    "scope": "APP",
+    "reference": "9031d81f3328d3c9641497c618a24f689031d81f3328d3c9641497c618a24f68",
+    "id": "9031d81f3328d3c9641497c618a24f68"
+}

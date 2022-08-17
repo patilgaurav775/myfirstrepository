@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-03T13:29:14 IST" name="Default suite" finished-at="2022-06-03T13:29:32 IST" duration-ms="18113">
+    <groups>
+    </groups>
+    <test started-at="2022-06-03T13:29:14 IST" name="Default test" finished-at="2022-06-03T13:29:32 IST" duration-ms="18113">
+      <class name="Launch_page.Launch_page">
+        <test-method is-config="true" signature="browser_launch()[pri:0, instance:Launch_page.Launch_page@383bfa16]" started-at="2022-06-03T13:28:53 IST" name="browser_launch" finished-at="2022-06-03T13:29:14 IST" duration-ms="20418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser_launch -->
+        <test-method is-config="true" signature="report_generate()[pri:0, instance:Launch_page.Launch_page@383bfa16]" started-at="2022-06-03T13:29:14 IST" name="report_generate" finished-at="2022-06-03T13:29:15 IST" duration-ms="910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report_generate -->
+        <test-method signature="Symbol_displayed()[pri:1, instance:Launch_page.Launch_page@383bfa16]" started-at="2022-06-03T13:29:15 IST" name="Symbol_displayed" description="logo visibility" finished-at="2022-06-03T13:29:15 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Symbol_displayed -->
+        <test-method signature="Option_under_men_module()[pri:2, instance:Launch_page.Launch_page@383bfa16]" started-at="2022-06-03T13:29:15 IST" name="Option_under_men_module" description="Top wear module validation" finished-at="2022-06-03T13:29:16 IST" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Option_under_men_module -->
+        <test-method signature="Main_module()[pri:3, instance:Launch_page.Launch_page@383bfa16]" started-at="2022-06-03T13:29:16 IST" name="Main_module" description="Verify presence of main module" finished-at="2022-06-03T13:29:16 IST" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Main_module -->
+        <test-method signature="Search_Box()[pri:4, instance:Launch_page.Launch_page@383bfa16]" started-at="2022-06-03T13:29:16 IST" name="Search_Box" description="Verify searchbox_functionaliy" finished-at="2022-06-03T13:29:31 IST" duration-ms="14880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_Box -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Launch_page.Launch_page@383bfa16]" started-at="2022-06-03T13:29:31 IST" name="teardown" finished-at="2022-06-03T13:29:32 IST" duration-ms="960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Launch_page.Launch_page -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="73.807">
+    <testcase classname="Title of your feature" name="To verify buy functionality" time="73.446">
+        <system-out><![CDATA[Given I launch browser......................................................passed
+Then I enter url............................................................passed
+And I verify url is working fine or not.....................................passed
+When Popup displays just close..............................................passed
+Then put "fastrack watches for men" in the search box.......................passed
+And click on search button..................................................passed
+And set the price range from "500" to "2000"................................passed
+Then click on particular product............................................passed
+And click on buy now button.................................................passed
+Then Verify Login page functionality........................................passed
+Then close the browser......................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

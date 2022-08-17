@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.403">
+    <testcase classname="check login functionality" name="check login with  valid credentials" time="1.841">
+        <failure message="Unable to make field private final java.lang.String java.io.File.path accessible: module java.base does not &quot;opens java.io&quot; to unnamed module @17776a8" type="java.lang.reflect.InaccessibleObjectException"><![CDATA[Given user is on login page 1...............................................failed
+When user enter valid username and password 1...............................skipped
+When clicks on login button 1...............................................skipped
+Then user should navigated to home page 1...................................skipped
+
+StackTrace:
+java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.lang.String java.io.File.path accessible: module java.base does not "opens java.io" to unnamed module @17776a8
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:357)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:177)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:171)
+	at com.google.gson.internal.reflect.UnsafeReflectionAccessor.makeAccessible(UnsafeReflectionAccessor.java:44)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:159)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:117)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:166)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:102)
+	at com.google.gson.Gson.getAdapter(Gson.java:458)
+	at com.google.gson.Gson.toJson(Gson.java:696)
+	at com.google.gson.Gson.toJson(Gson.java:683)
+	at com.google.gson.Gson.toJson(Gson.java:638)
+	at com.google.gson.Gson.toJson(Gson.java:618)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:601)
+	at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:241)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:492)
+	at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:362)
+	at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:335)
+	at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:195)
+	at pppp.uuuu.user_is_on_login_page(uuuu.java:28)
+	at ✽.user is on login page 1(file:///F:/GAURAV/eclips_ssd/TESTPRO/./src/test/resources/feature1122/zzhhzzz.feature:5)
+]]></failure>
+    </testcase>
+</testsuite>

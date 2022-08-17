@@ -1,0 +1,7 @@
+Step 1 --Create object of ExtentReports ---two paramter html path and flag-true
+Step 2 --For each test case we will start with method starttest 
+		//method which is having @test annotation will be created as test case
+Step 3 -- for each verification we will use log method
+			Extenttest.log(Logstatus.PASS/Fail,"")
+Step 4 --once you execution is done do call endtest
+Step 5--tell export report to create html page --flush

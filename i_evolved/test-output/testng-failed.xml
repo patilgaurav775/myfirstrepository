@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Cross Broswer]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="phantomJS(failed)">
+    <parameter name="browser" value="ChromeHeadLess"/>
+    <classes>
+      <class name="crossBrowsers.googleLaunch">
+        <methods>
+          <include name="SelectBrowser"/>
+          <include name="GoogleSreach"/>
+          <include name="BroswerQuit"/>
+        </methods>
+      </class> <!-- crossBrowsers.googleLaunch -->
+    </classes>
+  </test> <!-- phantomJS(failed) -->
+</suite> <!-- Failed suite [Cross Broswer] -->

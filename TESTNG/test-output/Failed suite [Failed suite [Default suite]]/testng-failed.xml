@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Default suite]]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)(failed)(failed)">
+    <classes>
+      <class name="PRACTICE.DEPENDS_ON">
+        <methods>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- PRACTICE.DEPENDS_ON -->
+      <class name="PRACTICE.ALWAYS_RUN">
+        <methods>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- PRACTICE.ALWAYS_RUN -->
+      <class name="PRACTICE.PARAMETERS">
+        <methods>
+          <include name="login_successful"/>
+          <include name="browserlaunch"/>
+          <include name="tear_down"/>
+          <include name="logo"/>
+        </methods>
+      </class> <!-- PRACTICE.PARAMETERS -->
+    </classes>
+  </test> <!-- Default test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Default suite]]] -->
